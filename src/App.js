@@ -15,7 +15,7 @@ const App = () => {
 
     try {
 
-      const res = await fetch("http://localhost:8000/files");
+      const res = await fetch("https://horizon-backend-lcax.onrender.com/files");
       const data = await res.json();
       console.log("data", data)
       setAllUploadedFiles(data.files || []);
@@ -29,7 +29,7 @@ const App = () => {
     const fetchTrainedResults = async () => {
       try {
 
-        const res = await fetch("http://localhost:8000/results");
+        const res = await fetch("https://horizon-backend-lcax.onrender.com/results");
         const data = await res.json();
         setResultsFiles(data.results || []);
       } catch (err) {

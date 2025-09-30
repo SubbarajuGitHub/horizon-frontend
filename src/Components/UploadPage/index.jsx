@@ -17,7 +17,7 @@ const UploadPage = ({ uploadedFile, setUploadedFile }) => {
     try {
 
       // Call FastAPI upload endpoint
-      const res = await fetch("http://localhost:8000/upload", {
+      const res = await fetch("https://horizon-backend-lcax.onrender.com/upload", {
         method: "POST",
         body: formData, // pass FormData here
       });

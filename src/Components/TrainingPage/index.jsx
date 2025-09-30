@@ -13,7 +13,7 @@ export const TrainingPage = ({ allUploadedFiles }) => {
     setTrainingStatus("in_progress");
     const file_location = allUploadedFiles?.filter((each) => each.original_name === selectedFile)?.[0]?.filename;
     try {
-      const response = await fetch("http://localhost:8000/predict", {
+      const response = await fetch("https://horizon-backend-lcax.onrender.com/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ filename: file_location }),

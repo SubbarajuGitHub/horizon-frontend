@@ -23,7 +23,7 @@ export const EvaluationPage = ({ setActiveTab }) => {
     const fetchResults = async () => {
       setLoading(true);
       try {
-        const response = await fetch("http://localhost:8000/results");
+        const response = await fetch("https://horizon-backend-lcax.onrender.com/results");
         if (!response.ok) throw new Error("Failed to fetch results");
         const data = await response.json();
         setAllResults(data.results);

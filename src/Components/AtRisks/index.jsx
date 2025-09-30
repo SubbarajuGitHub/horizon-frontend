@@ -12,7 +12,7 @@ function AtRiskUsers({ selectedFile, allUploadedFiles }) {
     try {
       const file_location = allUploadedFiles?.filter((each) => each.original_name === selectedFile)?.[0]?.filename;
       
-      const response = await fetch("http://localhost:8000/at-risk-users", {
+      const response = await fetch("https://horizon-backend-lcax.onrender.com/at-risk-users", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
