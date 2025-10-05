@@ -17,7 +17,7 @@ export const EvaluationPage = ({ setActiveTab }) => {
   const [evaluationData, setEvaluationData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  console.log("allResults", allResults)
+
   // Fetch all trained results on mount
   useEffect(() => {
     const fetchResults = async () => {

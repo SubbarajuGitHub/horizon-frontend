@@ -65,31 +65,6 @@ const App = () => {
               <h2 className="text-2xl font-bold text-white">Subscriber Churn Prediction</h2>
               <p className="text-slate-400 text-sm mt-1">AI-Powered Customer Retention Platform</p>
             </div>
-            <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2 bg-slate-700 px-4 py-2 rounded-lg">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5 text-purple-400">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
-                <div>
-                  <p className="text-xs text-slate-400">Total Users</p>
-                  <p className="text-white font-bold">{uploadedFile ? '12,847' : '0'}</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-2 bg-slate-700 px-4 py-2 rounded-lg">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5 text-pink-400">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <path d="M16 8l-8 8"></path>
-                  <path d="M8 8l8 8"></path>
-                </svg>
-                <div>
-                  <p className="text-xs text-slate-400">At Risk</p>
-                  <p className="text-white font-bold">{uploadedFile ? '2,341' : '0'}</p>
-                </div>
-              </div>
-            </div>
           </div>
         </header>
 
